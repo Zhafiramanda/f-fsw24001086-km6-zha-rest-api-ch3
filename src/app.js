@@ -7,4 +7,8 @@ app.use(express.json());
 // Routes
 app.use('/cars', carsRoutes);
 
+app.get('/', (req, res) => {
+    res.json({ message: 'Ping Succesfuly!' })
+})
+
 module.exports = app;
